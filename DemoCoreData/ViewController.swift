@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var tblViewExpenseList: TableView!
     
-    var menuOptions : [String] = ["Option1", "Optino2", "Option3", "Optino4", "Option5"]
+    var menuOptions : [String] = ["Option1", "Optino2", "Option3", "Optino14", "Option15"]
     
 
     override func viewDidLoad() {
