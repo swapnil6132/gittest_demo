@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="MenuCell" customModule="DemoCoreData" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TO9-mh-75a">
+                        <rect key="frame" x="0.0" y="6" width="320" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="YmL-wM-TES">
+                                <rect key="frame" x="15" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="G3Y-3h-ytD"/>
+                                    <constraint firstAttribute="height" constant="20" id="o19-s8-nff"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDL-L4-Bh5">
+                                <rect key="frame" x="53" y="10" width="259" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cDL-L4-Bh5" secondAttribute="trailing" constant="8" id="0wl-51-EgI"/>
+                            <constraint firstItem="YmL-wM-TES" firstAttribute="centerY" secondItem="TO9-mh-75a" secondAttribute="centerY" id="aHC-nI-8sD"/>
+                            <constraint firstAttribute="height" constant="40" id="cyo-vV-TZZ"/>
+                            <constraint firstItem="cDL-L4-Bh5" firstAttribute="leading" secondItem="YmL-wM-TES" secondAttribute="trailing" constant="18" id="oRl-02-3cL"/>
+                            <constraint firstItem="YmL-wM-TES" firstAttribute="leading" secondItem="TO9-mh-75a" secondAttribute="leading" constant="15" id="q6p-Oq-GRm"/>
+                            <constraint firstItem="cDL-L4-Bh5" firstAttribute="centerY" secondItem="TO9-mh-75a" secondAttribute="centerY" id="qxi-fg-uOs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="TO9-mh-75a" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1o7-9t-CaZ"/>
+                    <constraint firstItem="TO9-mh-75a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ATm-ln-K25"/>
+                    <constraint firstAttribute="trailing" secondItem="TO9-mh-75a" secondAttribute="trailing" id="Zb3-JY-fsg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgMenu" destination="YmL-wM-TES" id="XmR-Gl-eZa"/>
+                <outlet property="lblName" destination="cDL-L4-Bh5" id="arl-zW-RX5"/>
+                <outlet property="viewBG" destination="TO9-mh-75a" id="wRS-B3-BIA"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="51.27436281859071"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menu" width="20" height="16"/>
+    </resources>
+</document>
