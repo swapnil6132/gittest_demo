@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-DemoCoreData/Pods-DemoCoreData-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ANLoader/ANLoader.framework
+${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework
+${BUILT_PRODUCTS_DIR}/SSPlaceHolderTableView/SSPlaceHolderTableView.framework
+${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework
